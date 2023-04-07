@@ -1,3 +1,16 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 396px;
+    padding: 0 0px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .container {
+    padding-bottom: 96px;
+    padding-top: 96px;
+  }
+}
+
 .hero-section {
   background: linear-gradient(
       180deg,
@@ -15,7 +28,45 @@
   height: 600px;
   border-radius: 30px;
 }
-
+@media screen and(min-width: 428px) {
+  .hero-section {
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/common/hero/chocolate-covered-cocoa-powder\ 3.jpg);
+  }
+}
+@media screen and(min-width: 768px) {
+  .hero-section {
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/common/hero/chocolate-covered-cocoa-powder\ 2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1136px;
+    height: 600px;
+    border-radius: 30px;
+  }
+}
 /* ---------fonts---------- */
 
 .hero-text {
@@ -28,7 +79,6 @@
   padding-left: 40px;
   margin-bottom: 32px;
   max-width: 484px;
-  
 }
 
 .scroll-down-text {
@@ -45,7 +95,7 @@
 .button-list {
   display: flex;
   gap: 14px;
-  padding-left: 40px; 
+  padding-left: 40px;
 }
 .buy-button {
   flex-direction: row;
