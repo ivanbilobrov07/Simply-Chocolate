@@ -1,3 +1,21 @@
+.hero-section {
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1136px;
+  height: 600px;
+  border-radius: 20px;
+}
+
 /* ---------fonts---------- */
 
 .hero-text {
@@ -7,6 +25,8 @@
   font-size: 28px;
   line-height: 34px;
   letter-spacing: -0.03em;
+  color: #ffffff;
+  padding-top: 381px;
 }
 
 .scroll-down-text {
@@ -16,11 +36,34 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.03em;
+  color: #ffffff;
 }
-
 /* ---------fonts---------- */
 
-.hero-section{
- background-image: ;
+/* ---------buttons---------- */
 
+.button-list {
+  display: flex;
+  gap: 14px;
+  padding: 14px 40px;
 }
+.buy-button {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 40px;
+  gap: 14px;
+  background: #fd9222;
+  border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.how-its-made-button {
+  padding: 14px 40px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+/* ---------buttons---------- */
