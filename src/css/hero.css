@@ -13,7 +13,7 @@
   margin-right: auto;
   width: 1136px;
   height: 600px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 /* ---------fonts---------- */
@@ -44,6 +44,7 @@
   display: flex;
   gap: 14px;
   padding: 14px 40px;
+  flex-grow: 1;
 }
 .buy-button {
   flex-direction: row;
@@ -58,6 +59,12 @@
   color: #ffffff;
   border: none;
 }
+.buy-button:hover,
+.buy-button:focus {
+  background: #fcf1e0;
+  border-radius: 100px;
+  color: #fd9222;
+}
 .how-its-made-button {
   padding: 14px 40px;
   border: 1px solid #ffffff;
@@ -65,19 +72,29 @@
   background: rgba(0, 0, 0, 0);
   color: #ffffff;
 }
-
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+  color: #fd9222;
+  background-color: #e2e2e2;
+}
 .scroll-place {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 14px;
-  flex-grow: 1;
+  margin-left: 585px;
 }
-
+.scroll-place:hover {
+  color: #fd9222;
+}
 .scroll-button {
   border-radius: 50%;
   border: none;
   width: 38px;
   height: 38px;
+  background: #ffffff;
+}
+.scroll-button:hover,
+.scroll-button:focus {
 }
 /* ---------buttons---------- */
