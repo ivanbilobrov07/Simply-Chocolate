@@ -1,17 +1,137 @@
-.sellers {
-}
-.container {
-}
 .sellers-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: -0.03em;
   color: #fd9222;
   text-align: center;
+  text-transform: uppercase;
 }
 .title-sellers {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: -0.03em;
   color: #111111;
+  text-transform: uppercase;
+}
+.sellers-list {
+  display: flex;
+}
+.sellers-item {
+}
+.sellers-img {
+  border-radius: 15px;
+}
+.sellers-box {
+  display: flex;
+}
+.sellers-text {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.sellers-button {
+  color: var(--white-color);
+  font-weight: 600;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: transparent;
+  cursor: pointer;
+  /* transition-property: background-color;
+  transition-property: color;
+  transition-duration: ; */
+  /* transition-timing-function: ; */
+}
+.sellers-button:hover,
+.sellers-button:focus {
+  color: var(--accent-color);
+  background-color: #fcf1e0;
+}
+/* Mobile  */
+@media screen and (min-width: 330px) and (max-width: 1199px) {
+  .sellers-list .sellers-item:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 767px) {
+  .sellers-title {
+    margin-bottom: 32px;
+  }
+  .sellers-list {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+  .sellers-img {
+    margin-bottom: 20px;
+  }
+  .sellers-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .sellers-box {
+    justify-content: center;
+  }
+  .sellers-button {
+    padding: 12px 28px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .sellers-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .title-sellers {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .sellers-list {
+    column-gap: 16px;
+    margin-bottom: 32px;
+  }
+  .sellers-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sellers-text {
+    max-width: 306px;
+    max-height: 90px;
+  }
+  .sellers-button {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    width: 162px;
+    height: 50px;
+  }
+  .sellers-words {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .sellers-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  .title-sellers {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  .sellers-list {
+    column-gap: 16px;
+  }
+  .sellers-text {
+    max-width: 407px;
+    max-height: 72px;
+  }
 }
