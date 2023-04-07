@@ -4,7 +4,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(../img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
+    url(/img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +27,8 @@
   padding-top: 381px;
   padding-left: 40px;
   margin-bottom: 32px;
+  max-width: 484px;
+  
 }
 
 .scroll-down-text {
@@ -43,8 +45,7 @@
 .button-list {
   display: flex;
   gap: 14px;
-  padding: 14px 40px;
-  flex-grow: 1;
+  padding-left: 40px; 
 }
 .buy-button {
   flex-direction: row;
@@ -84,9 +85,7 @@
   gap: 14px;
   margin-left: 585px;
 }
-.scroll-place:hover {
-  color: #fd9222;
-}
+
 .scroll-button {
   border-radius: 50%;
   border: none;
@@ -94,7 +93,5 @@
   height: 38px;
   background: #ffffff;
 }
-.scroll-button:hover,
-.scroll-button:focus {
-}
+
 /* ---------buttons---------- */
