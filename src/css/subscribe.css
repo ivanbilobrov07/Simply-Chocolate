@@ -43,7 +43,7 @@ body {
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(../img/common/our-products/Subcribetel.jpg);
+    url(../img/common/Subscribe/Subcribetel.jpg);
 
   background-size: cover;
 }
@@ -56,7 +56,7 @@ body {
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/our-products/Subcribetel@2x.webp);
+      url(../img/common/Subscribe/Subcribetel@2x.webp);
   }
 }
 
@@ -149,7 +149,7 @@ body {
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/our-products/Subcribetab.jpg);
+      url(../img/common/Subscribe/Subcribetab.jpg);
   }
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -160,7 +160,7 @@ body {
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/common/our-products/Subcribetab@2x.webp);
+        url(../img/common/Subscribe/Subcribetab@2x.webp);
     }
   }
 }
@@ -172,7 +172,7 @@ body {
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/our-products/Subcribedesk.jpg);
+      url(../img/common/Subscribe/Subcribedesk.jpg);
   }
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -183,7 +183,7 @@ body {
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/common/our-products/Subcribedesk@2x.webp);
+        url(../img/common/Subscribe/Subcribedesk@2x.webp);
     }
   }
 }
