@@ -6,28 +6,26 @@
     text-align: center;
     color: #111111;
     margin-bottom: 24px;
+    margin-top: 58px;
 }
 
 .reviews-card-text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28;
     text-align: center;
-    letter-spacing: -0.02em;
     color: rgba(17, 17, 17, 0.7);
-    /* width: 312px;
-    height: 72px; */
     margin-left: auto;
     margin-right: auto;
 }
 
 .reviews-card-img {
-    margin-top: -40px;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    right: 50%;
+    margin-right: -40px;
+
 }
 
 .review-swiper-padding {
@@ -40,12 +38,13 @@
 }
 
 .review {
+    position: relative;
     box-sizing: border-box;
     max-width: 360px;
     height: 200px;
     left: 0px;
     top: 42px;
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
     border-radius: 15px;
@@ -59,7 +58,7 @@
     padding: 14px 40px;
     width: 222px;
     height: 50px;
-    border: 1px solid #FD9222;
+    border: 1px solid var(--accent-color);
     border-radius: 100px;
     background-color: var(--primary-background-color);
     margin-left: auto;
@@ -93,29 +92,28 @@
         height: 200px;
         left: 0px;
         top: 42px;
-        background: #FFFFFF;
+        background: var(--white-color);
         border: 1px solid rgba(17, 17, 17, 0.1);
         box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
         border-radius: 15px;
     }
 
     .reviews-card-text {
-        width: 300px;
-        height: 72px;
+        padding: 0 18px 20px 18px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .review {
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         max-width: 360px;
-        height: 200px;
+        /* height: 200px;
         left: 0px;
         top: 42px;
         background: #FFFFFF;
         border: 1px solid rgba(17, 17, 17, 0.1);
         box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
-        border-radius: 15px;
+        border-radius: 15px; */
     }
 
     .review-swiper-padding {
@@ -123,7 +121,6 @@
     }
 
     .reviews-card-text {
-        width: 312px;
-        height: 72px;
+        padding: 0 22px 20px 22px;
     }
 }
