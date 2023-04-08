@@ -1,89 +1,3 @@
-/* .reviews-card-title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-    text-align: center;
-    color: #111111;
-    margin-bottom: 24px;
-}
-
-.review-swiper {
-    padding-bottom: 33px;
-}
-
-.reviews-card-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: rgba(17, 17, 17, 0.7);
-    width: 312px;
-    height: 72px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.reviews-card-img {
-    margin-top: -40px;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-}
-
-.review-card {
-    box-sizing: border-box;
-    width: 360px;
-    height: 200px;
-    left: 0px;
-    top: 42px;
-    background: #FFFFFF;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
-    border-radius: 15px;
-}
-
-.slider {
-    overflow: hidden;
-    position: relative;
-}
-
-.slider__wrapper {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
-.slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-@media screen and (min-width: 375px) {
-    .slider__item {
-        flex: 0 0 375px;
-        max-width: 375px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .slider__item {
-        flex: 0 0 768px;
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .slider__item {
-        flex: 0 0 1200px;
-        max-width: 1200px;
-    }
-} */
-
 .reviews-card-title {
     font-style: normal;
     font-weight: 600;
@@ -102,8 +16,8 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: rgba(17, 17, 17, 0.7);
-    width: 312px;
-    height: 72px;
+    /* width: 312px;
+    height: 72px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -172,7 +86,7 @@
     color: var(--white-color);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .review {
         box-sizing: border-box;
         max-width: 335px;
@@ -183,6 +97,11 @@
         border: 1px solid rgba(17, 17, 17, 0.1);
         box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
         border-radius: 15px;
+    }
+
+    .reviews-card-text {
+        width: 300px;
+        height: 72px;
     }
 }
 
@@ -201,5 +120,10 @@
 
     .review-swiper-padding {
         padding-bottom: 45px;
+    }
+
+    .reviews-card-text {
+        width: 312px;
+        height: 72px;
     }
 }
