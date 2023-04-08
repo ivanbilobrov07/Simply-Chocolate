@@ -1,0 +1,189 @@
+.section {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+.subscribe {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 63px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/common/our-products/Subcribetel.jpg);
+
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/common/our-products/Subcribetel@2x.webp);
+  }
+}
+
+.sub-title {
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  width: 291px;
+  height: 48px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub-p {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+
+  width: 280px;
+
+  margin-top: 24px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-btn-div {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-btn {
+  background-color: #fd9222;
+
+  width: 128px;
+  height: 41px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  cursor: pointer;
+
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+  border-color: #fcf1e0;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-btn {
+    width: 176px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+
+    width: 376px;
+    height: 56px;
+  }
+  .sub-p {
+    width: 412px;
+  }
+
+  .subscribe {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/common/our-products/Subcribetab.jpg);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/common/our-products/Subcribetab@2x.webp);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/common/our-products/Subcribedesk.jpg);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../img/common/our-products/Subcribedesk@2x.webp);
+    }
+  }
+}
