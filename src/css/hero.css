@@ -1,3 +1,10 @@
+.main-container{
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+
 @media screen and (min-width: 428px) {
   .container {
     padding: 0 0px;
@@ -85,6 +92,22 @@
     border-radius: 30px;
   }
 }
+.hero-section {
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(/img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1136px;
+  height: 600px;
+  border-radius: 30px;}
 /* ---------fonts---------- */
 
 .hero-text {
@@ -94,7 +117,6 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   padding-top: 381px;
-  padding-left: 40px;
   margin-bottom: 32px;
   max-width: 484px;
 }
@@ -113,7 +135,7 @@
 .button-list {
   display: flex;
   gap: 14px;
-  padding-left: 40px;
+  padding-left:
 }
 .buy-button {
   flex-direction: row;
@@ -127,6 +149,7 @@
   line-height: 17px;
   color: #ffffff;
   border: none;
+  min-width: ;
 }
 .buy-button:hover,
 .buy-button:focus {
@@ -151,15 +174,18 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
-  margin-left: 585px;
+  margin-left: auto;
 }
-
+.button-item{
+  margin-left: auto;
+}
 .scroll-button {
   border-radius: 50%;
   border: none;
   width: 38px;
   height: 38px;
   background: #ffffff;
+
 }
 
 /* ---------buttons---------- */
