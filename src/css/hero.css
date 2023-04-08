@@ -1,6 +1,5 @@
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
     padding: 0 0px;
   }
 }
@@ -24,8 +23,7 @@
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  width: 1136px;
-  height: 600px;
+  width: 100%;
   border-radius: 30px;
 }
 @media screen and(min-width: 428px) {
@@ -36,6 +34,13 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url(../img/common/hero/chocolate-covered-cocoa-powder\ 3.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
   }
 }
 @media screen and(min-width: 768px) {
