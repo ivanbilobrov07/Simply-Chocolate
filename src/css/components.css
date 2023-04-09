@@ -37,7 +37,7 @@ img {
 }
 .flip-card-item {
   position: relative;
-  width: 336px;
+  max-width: 336px;
   height: 270px;
   transition: transform 1s ease;
   transform-style: preserve-3d;
@@ -138,7 +138,12 @@ img {
   border-radius: 35px;
   padding: 6px 16px 6px 16px;
 }
-
+@media screen and (min-width: 375px) {
+  .flip-card-item {
+    width: 336px;
+    height: 270px;
+  }
+}
 @media screen and (max-width: 767px) {
   .flip-card-item:not(:last-child) {
     margin-bottom: 20px;
