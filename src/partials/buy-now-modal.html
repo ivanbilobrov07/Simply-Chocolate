@@ -8,98 +8,90 @@
     <h3 class="title"><span class="title buy">Buy</span>Now</h3>
     <ul class="card-set-modal">
       <li class="card-list">
-        <svg class="card-chocolate" width="14" height="14">
-          <use href="../img/chocolate/choco-one.svg"></use>
-        </svg>
+       
         <button type="button" class="grams">100g</button>
       </li>
       <li class="card-list">
-        <svg class="card-chocolate" width="" height="">
-          <use href="../img/chocolate/choco-two.svg"></use>
-        </svg>
+    
         <button type="button" class="grams">200g</button>
       </li>
       <li class="card-list">
-        <svg class="card-chocolate">
-          <use href="../img/chocolate/choco-three.svg"></use>
-        </svg>
+      
         <button type="button" class="grams">300g</button>
       </li>
     </ul>
-    <form class="modal-form">
-      <label class="form">
-        <span class="form subtitle">Personal information</span>
+    <form class="form">
+      <label>
         <div class="modal-input">
-          <input type="text" class="form input" name="name" required />
-          <textarea
-            name="name"
-            cols="30"
-            rows="10"
-            class="text-area name"
+          <span class="form subtitle">Personal information</span>
+          <input
+            type="text"
+            class="form inputs"
+            name="first-name"
             placeholder="Name"
-          ></textarea>
-        </div>
-        <div>
-          <input type="text" class="form input" name="surname" required />
-          <textarea
-            name="surname"
-            cols="30"
-            rows="10"
-            class="text-area surname"
+            pattern="[A-Z],[a-z]"
+            required
+          />
+          <input
+            type="text"
+            class="form inputs"
+            name="last-name"
             placeholder="Surname"
-          ></textarea>
+            pattern="[A-Z],[a-z]"
+            required
+          />
         </div>
       </label>
-      <label class="modal-form">
-        <span class="form subtitle">Email</span>
+      <label>
         <div class="modal-input">
-          <input type="text" class="form input" name="email" required />
-          <textarea
-            name="email"
-            cols="30"
-            rows="10"
-            class="text-area email"
-            placeholder="Enter your email"
-          ></textarea>
+          <span class="form subtitle">E-mail</span>
+           <div class="modal-input">
+          <input
+            type="text"
+            class="form input"
+            name="Email"
+            placeholder="E-mail"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
         </div>
       </label>
-      <label class="modal-form">
-        <span class="form subtitle">Phone number</span>
-        <div class="modal-input">
-          <input type="text" class="form input" name="telephone" required />
-          <svg class="flag" width="32" height="24">
-            <use href="../img/flag/flag.svg"></use>
-          </svg>
-          <span class="form numbers">+380</span>
-          <textarea
+      <label>
+         <div class="modal-input">
+          <span class="form subtitle">Phone number</span>
+           <div class="modal-input">
+          <input
+            type="text"
+            class="form input"
             name="telephone"
-            cols="30"
-            rows="10"
-            class="text-area phone"
             placeholder="Phone number"
-          ></textarea>
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <svg class="modal-icon">
+              <use></use>
+            </svg>
+            <span>+380</span>
         </div>
-      </label>
-      <label class="modal-form">
-        <span class="form subtitle">Card number</span>
-        <div class="modal-input">
-          <input type="text" class="form input" name="card" required />
-          <textarea
-            name="card"
-            cols="30"
-            rows="10"
-            class="text-area card"
+       <label>
+         <div class="modal-input">
+          <span class="form subtitle">Card number</span>
+           <div class="modal-input">
+          <input
+            type="text"
+            class="form input"
+            name="telephone"
             placeholder="Enter card"
-          ></textarea>
-          <svg class="card-logo" width="30" height="18">
-            <use href="../img/flag/flag.svg"></use>
-          </svg>
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+            <svg class="modal-icon">
+              <use></use>
+            </svg>
         </div>
-      </label>
-      <label class="modal-form">
+      <label>
         <span class="form subtitle">Comment</span>
-        <div class="modal-input">
-          <input type="text" class="form input" name="comment" required />
+        <div class="modal-input-area">
           <textarea
             name="comment"
             cols="30"
