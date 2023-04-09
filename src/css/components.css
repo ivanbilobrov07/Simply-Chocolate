@@ -2,7 +2,7 @@ img {
   display: block;
 }
 
-.list-components {
+.list {
   list-style: none;
 }
 .caption-text-components {
@@ -14,7 +14,6 @@ img {
   margin-left: 37.5px;
   margin-right: 37.5px;
   margin-bottom: 28px;
-  font-family: var(--primary-font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
@@ -47,7 +46,7 @@ img {
   margin-top: 32px;
   align-items: center;
 }
-.text-front-components {
+.text-front {
   margin-right: 0;
   margin-top: 36px;
   margin-bottom: 0;
