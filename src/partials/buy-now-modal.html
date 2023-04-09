@@ -2,96 +2,61 @@
   <div class="modal">
     <button type="button" data-modal-close class="modal-close">
       <svg class="cross" width="14" height="14">
-        <use href="../img/close/close-defs.svg#-icon-close"></use>
+        <use href=""></use>
       </svg>
     </button>
     <h3 class="title"><span class="title buy">Buy</span>Now</h3>
     <ul class="card-set-modal">
       <li class="card-list">
-       
+        <img src="" alt="">
         <button type="button" class="grams">100g</button>
       </li>
       <li class="card-list">
-    
-        <button type="button" class="grams">200g</button>
+        <img src="" alt="">
+           <button type="button" class="grams">200g</button>
       </li>
       <li class="card-list">
-      
-        <button type="button" class="grams">300g</button>
+        <img src="" alt="">
+           <button type="button" class="grams">300g</button>
       </li>
     </ul>
-    <form class="form">
+    <form class="modal-form">
       <label>
+        <span class="form subtitle">Personal information</span>
         <div class="modal-input">
-          <span class="form subtitle">Personal information</span>
-          <input
-            type="text"
-            class="form inputs"
-            name="first-name"
-            placeholder="Name"
-            pattern="[A-Z],[a-z]"
-            required
-          />
-          <input
-            type="text"
-            class="form inputs"
-            name="last-name"
-            placeholder="Surname"
-            pattern="[A-Z],[a-z]"
-            required
-          />
+          <input type="text" class="form inputs" name="name" placeholder= "Name" required />
+          <input type="text" class="form inputs"  name="surname" placeholder="Surname" required/>
+        </div>
+      </label>
+      <label">
+        <span class="form subtitle">Email</span>
+        <div class="modal-input">
+          <input type="text" class="form input" name="email" placeholder="Enter your email" required />
         </div>
       </label>
       <label>
+        <span class="form subtitle">Phone number</span>
         <div class="modal-input">
-          <span class="form subtitle">E-mail</span>
-           <div class="modal-input">
-          <input
-            type="text"
-            class="form input"
-            name="Email"
-            placeholder="E-mail"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required
-          />
+          <input type="text" class="form input" name="telephone" placeholder="Phone number" required />
+          <svg class="flag" width="32" height="24">
+            <use></use>
+          </svg>
+          <span class="form numbers">+380</span>
         </div>
       </label>
-      <label>
-         <div class="modal-input">
-          <span class="form subtitle">Phone number</span>
-           <div class="modal-input">
-          <input
-            type="text"
-            class="form input"
-            name="telephone"
-            placeholder="Phone number"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required
-          />
-          <svg class="modal-icon">
-              <use></use>
-            </svg>
-            <span>+380</span>
+      <label class="modal-form">
+        <span class="form subtitle">Card number</span>
+        <div class="modal-input">
+          <input type="text" class="form input" name="card" placeholder="Enter card" required />
+          <svg class="card-logo" width="30" height="18">
+            <use></use>
+          </svg>
         </div>
-       <label>
-         <div class="modal-input">
-          <span class="form subtitle">Card number</span>
-           <div class="modal-input">
-          <input
-            type="text"
-            class="form input"
-            name="telephone"
-            placeholder="Enter card"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required
-          />
-            <svg class="modal-icon">
-              <use></use>
-            </svg>
-        </div>
-      <label>
+      </label>
+      <label class="modal-form">
         <span class="form subtitle">Comment</span>
-        <div class="modal-input-area">
+        <div class="modal-input">
+          <input type="text" class="form input" name="comment" required />
           <textarea
             name="comment"
             cols="30"
