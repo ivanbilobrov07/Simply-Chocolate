@@ -338,3 +338,8 @@ body {
     right: 16px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .sub-modal {
+    top: 69%;
+  }
+}
