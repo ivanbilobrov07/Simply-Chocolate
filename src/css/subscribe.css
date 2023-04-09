@@ -193,7 +193,7 @@ body {
   background-color: #e2e2e2;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 118%;
   transform: translate(-50%, -50%);
   overflow: auto;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -314,6 +314,7 @@ body {
   .sub-modal {
     width: 538px;
     height: 412px;
+    top: 92%;
   }
   .sub-modal-photo {
     height: 194px;
