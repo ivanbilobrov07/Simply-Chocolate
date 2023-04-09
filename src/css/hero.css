@@ -27,7 +27,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/img/common/hero/chocolate-covered-cocoa-powder\ 1.jpg);
+      url(../img/common/hero/chocolate-covered-cocoa-powder\ 3.jpg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     border-radius: 30px;
   }
 }
-@media screen and(min-width: 428px) {
+@media screen and (min-width: 428px) {
   .hero-section {
     background: linear-gradient(
         180deg,
@@ -55,7 +55,7 @@
     border-radius: 30px;
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     background: linear-gradient(
         180deg,
@@ -119,13 +119,31 @@
   margin-bottom: 32px;
   max-width: 484px;
 }
-
-.scroll-down-text {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.03em;
-  color: #ffffff;
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    max-width: 484px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .hero-text {
+    letter-spacing: -0.03em;
+    padding-top: 395px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 /* ---------fonts---------- */
 
@@ -173,9 +191,17 @@
   gap: 14px;
   margin-left: auto;
 }
+.scroll-place:hover,
+.scroll-place:focus {
+  color: ;
+}
+.scroll-button:hover {
+  background-color: #fd9222;
+}
 .button-item {
   margin-left: auto;
 }
+
 .scroll-button {
   border-radius: 50%;
   border: none;
