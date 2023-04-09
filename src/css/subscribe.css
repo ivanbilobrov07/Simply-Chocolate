@@ -1,38 +1,5 @@
-.section {
-  padding: 0;
-  margin: 0;
-}
 body {
   margin: 0;
-}
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 335px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1136px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
-    align-items: center;
-  }
 }
 .subscribe {
   width: 100%;
