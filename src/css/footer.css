@@ -85,23 +85,11 @@ margin-bottom: 14px;
   flex-direction: column;
 }
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 355px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .footer {
     background-color:#1E1823;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .footer {
     background-color:#1E1823;
     padding-top: 50px;
