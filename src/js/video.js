@@ -9,3 +9,11 @@ image.addEventListener('click', function () {
   image.style.display = 'none';
   iconPlay.style.display = 'none';
 });
+
+iconPlay.addEventListener('click', function () {
+  video.src += '?autoplay=1';
+
+  video.style.display = 'block';
+  image.style.display = 'none';
+  iconPlay.style.display = 'none';
+});
