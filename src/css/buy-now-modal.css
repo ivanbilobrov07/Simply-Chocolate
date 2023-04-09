@@ -81,7 +81,10 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
 }
-
+.card-chocolate{
+    width: 14px;
+    height: 14px;
+}
 .grams{
     /*font-family: 'Montserrat';*/
     font-style: normal;
