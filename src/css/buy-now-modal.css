@@ -120,6 +120,8 @@
     align-items: flex-start;
     padding: 0px;
     gap: 18px;
+    margin-bottom: 18px;
+    margin-top: 40px;
 
 }
 
@@ -170,3 +172,30 @@
     resize: none;
 }
 
+
+
+/*Button*/
+.modal-bttn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.modal-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--background-color-two);
+    padding: 14px 40px;
+    gap: 14px;
+    width: 133px;
+    height: 45px;
+    border-radius: 100px;
+    border: none;
+    background: var(--text-color-buy);
+  
+}
