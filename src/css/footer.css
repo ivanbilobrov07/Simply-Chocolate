@@ -99,7 +99,6 @@ margin-bottom: 14px;
   .second-div {
     display: flex;
     align-items: start;
-    /* justify-content: center; */
     gap: 50px;
     margin-top: 0;
     max-width: 300px;
