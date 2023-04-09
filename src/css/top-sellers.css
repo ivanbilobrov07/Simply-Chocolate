@@ -1,17 +1,121 @@
-.sellers {
+.sellers-list {
+  display: flex;
 }
-.container {
+.sellers-img {
+  border-radius: 15px;
 }
-.sellers-title {
+.sellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.sellers-button {
+  color: var(--white-color);
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #fd9222;
-  text-align: center;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: transparent;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.title-sellers {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #111111;
+.sellers-button:hover,
+.sellers-button:focus {
+  color: var(--accent-color);
+  background-color: #fcf1e0;
+}
+/* Mobile  */
+@media screen and (max-width: 1199px) {
+  .sellers-list .sellers-item:last-child {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 330px) and (max-width: 767px) {
+  .title-decor {
+    margin-bottom: 32px;
+  }
+  .sellers-list {
+    row-gap: 32px;
+    flex-direction: column;
+  }
+  .sellers-img {
+    margin-bottom: 20px;
+  }
+  .sellers-text {
+    max-width: 306px;
+  }
+  .sellers-but {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sellers-box {
+    justify-content: center;
+  }
+  .sellers-button {
+    padding: 12px 28px;
+    font-size: 14px;
+    line-height: 1.21;
+    width: 120px;
+    height: 41px;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .title-decor {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .sellers-list {
+    column-gap: 16px;
+  }
+  .sellers-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .sellers-img {
+    margin-bottom: 32px;
+  }
+  .sellers-text {
+    max-width: 306px;
+  }
+  .sellers-button {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    width: 162px;
+    height: 50px;
+    margin-left: auto;
+  }
+  .hidden {
+    display: none;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .sellers-words {
+    display: none;
+  }
+  .title-decor {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  .sellers-list {
+    column-gap: 16px;
+  }
+  .sellers-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sellers-text {
+    max-width: 407px;
+  }
 }
