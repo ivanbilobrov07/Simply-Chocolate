@@ -1,4 +1,4 @@
-.overlay {
+/*.overlay {
   opacity: 0;
   visibility: hidden;
 
@@ -15,4 +15,4 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
+}*/
