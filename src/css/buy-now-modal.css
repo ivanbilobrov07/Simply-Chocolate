@@ -1,1 +1,82 @@
+.buy-now.modal {
+  width: 311px;
+  background-color: #fafafa;
+  overflow: scroll;
+  height: 95%;
+  max-height: 994px;
+}
 
+.buy-modal-inner {
+  padding: 32px 24px;
+}
+
+.buy-modal__title {
+  margin-bottom: 32px;
+}
+
+.buy-now-close {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  stroke: #000;
+}
+
+.buy-modal__item + .buy-modal__item {
+  margin-top: 8px;
+}
+
+.buy-modal__list {
+  margin-bottom: 32px;
+}
+
+.buy-modal__item {
+  padding: 8px 16px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.item__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-modal__amount {
+  display: block;
+  padding: 6px 16px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.form__box {
+  display: block;
+}
+
+.form__box + .form__box {
+  margin-top: 18px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.form__input + .form__input {
+  margin-top: 14px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
