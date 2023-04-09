@@ -90,13 +90,14 @@ li {
 
     }
 }
-
+@media(min-width: 1200px) {
 .nav-links {
     display: flex;
     align-items: center;
     gap: 24px;
     margin-left: 190px;
     margin-right: 139px;
+}
 }
 
 .header-social-block {
@@ -154,4 +155,7 @@ li {
     height: 13.3px;
     fill: white;
     background-color: white;
+}
+.nav-row {
+    color: white;
 }
