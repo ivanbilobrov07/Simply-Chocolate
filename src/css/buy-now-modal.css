@@ -1,7 +1,7 @@
 .buy-now.modal {
   width: 311px;
   background-color: #fafafa;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 95%;
   max-height: 994px;
 }
@@ -38,7 +38,7 @@
   border-radius: 15px;
 }
 
-.item__inner {
+.buy-modal-item__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,17 +50,18 @@
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+  font-weight: 600;
 }
 
-.form__box {
+.buy-modal-form__box {
   display: block;
 }
 
-.form__box + .form__box {
+.buy-modal-form__box + .buy-modal-form__box {
   margin-top: 18px;
 }
 
-.form__label {
+.buy-modal-form__label {
   display: block;
   margin-bottom: 8px;
 
@@ -69,14 +70,159 @@
   line-height: 1.17;
 }
 
-.form__input + .form__input {
+.buy-modal-form__input + .buy-modal-form__input {
   margin-top: 14px;
 }
 
-.form__input {
+.buy-modal-form__input {
   display: block;
   width: 100%;
   padding: 14px 18px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
+}
+
+.buy-modal-number-input {
+  padding-left: 106px;
+}
+
+.buy-modal-card-input {
+  padding-right: 50px;
+}
+
+.buy-modal-label-box {
+  position: relative;
+}
+
+.buy-modal-label-decor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buy-modal-decor-left {
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buy-modal-decor-right {
+  right: 20px;
+}
+
+.buy-modal-label-decor__text {
+  padding-right: 8px;
+}
+
+.buy-modal-form__textarea {
+  width: 100%;
+  height: 90px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 14px 18px;
+  resize: none;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.buy-modal-form__btn {
+  min-width: 110px;
+  padding: 12px 28px;
+  border: none;
+
+  border-radius: 100px;
+  color: var(--white-color);
+  background: var(--accent-color);
+  font-weight: 600;
+}
+
+.buy-modal-form__input::placeholder,
+.buy-modal-form__textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now.modal {
+    width: 610px;
+    max-height: 1060px;
+  }
+  .buy-modal-inner {
+    padding: 48px;
+  }
+  .buy-now-close {
+    width: 14px;
+    height: 14px;
+    top: 24px;
+    right: 24px;
+  }
+  .buy-modal__item + .buy-modal__item {
+    margin-top: 0px;
+  }
+  .buy-modal__list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .buy-modal__item {
+    flex-basis: calc((100% - 32px) / 3);
+    padding: 24px 20px 18px;
+  }
+  .buy-modal-item__inner {
+    display: block;
+  }
+  .buy-modal__amount {
+    display: block;
+    width: 96px;
+    margin: 14px auto 0;
+    padding: 8px 29px;
+  }
+  .buy-modal-name {
+    display: flex;
+    gap: 20px;
+  }
+  .buy-modal-form__label {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .buy-modal-form__input + .buy-modal-form__input {
+    margin-top: 0;
+  }
+  .buy-modal-form__input {
+    padding: 22px 24px;
+  }
+  .buy-modal-number-input {
+    padding-left: 177px;
+  }
+  .buy-modal-card-input {
+    padding-right: 90px;
+  }
+  .buy-modal-decor-left {
+    left: 25px;
+    gap: 18px;
+  }
+  .buy-modal-decor-right {
+    right: 30px;
+  }
+  .buy-modal-label-decor__text {
+    padding-right: 32px;
+  }
+  .buy-modal-form__textarea {
+    height: 140px;
+    padding: 22px 24px;
+  }
+  .buy-modal-form__btn {
+    min-width: 135px;
+    padding: 14px 40px;
+  }
+  .buy-modal-form__input::placeholder,
+  .buy-modal-form__textarea::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .buy-modal-form__input,
+  .buy-modal-form__textarea {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
