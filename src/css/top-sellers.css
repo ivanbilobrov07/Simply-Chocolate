@@ -42,8 +42,6 @@
   }
   .sellers-list {
     row-gap: 32px;
-  }
-  .sellers-list {
     flex-direction: column;
   }
   .sellers-img {
