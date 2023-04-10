@@ -71,6 +71,12 @@ li {
     }
 }
 
+.heder-logo-icon {
+    position: absolute;
+    margin-left: 7px;
+}
+
+
 .header-link {
     font-weight: 500;
     font-size: 14px;
@@ -193,15 +199,32 @@ li {
     width: 13.3px;
     height: 13.3px;
     fill: white;
-  
 }
+
+.modal-icon:hover
+.modal-icon:focus {
+fill: orange;
+}
+
 .nav-row {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
     color: white;
     margin-bottom: 24px;
+}
+.nav-row:hover
+.nav-row:focus {
+    color: orange;
 }
 
 .mobile-social-icon {
     fill: white;
+}
+.mobile-social-icon:hover
+.mobile-social-icon:focus{
+    fill: orange;
 }
 
 .mobile-social-box {
