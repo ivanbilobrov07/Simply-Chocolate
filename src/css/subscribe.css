@@ -272,11 +272,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
-.sub-modal.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
 
 @media screen and (min-width: 768px) {
   .sub-modal {
