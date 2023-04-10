@@ -204,6 +204,10 @@
   padding-left: 18px;
   padding-right: 100px;
 }
+.form-input:hover,
+.form-input:focus {
+  border-color: #fd9222;
+}
 
 .coco-btn {
   position: absolute;
