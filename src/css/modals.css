@@ -2,7 +2,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +24,6 @@
 
   transition: 0.3s all;
 }
-
 .modal.active,
 .overlay.active {
   opacity: 1;
