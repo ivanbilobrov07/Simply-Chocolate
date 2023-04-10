@@ -11,6 +11,15 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+  }
+  
+}
 .hero-section {
   background: linear-gradient(
       180deg,
@@ -98,7 +107,7 @@
     margin-right: auto;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero-section {
     background: linear-gradient(
         180deg,
@@ -228,22 +237,21 @@
   gap: 14px;
   margin-left: auto;
   align-items: center;
-  margin-left: 585px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 428px) {
   .scroll-place {
-    margin-top: 0px;
+    margin-left: 0px;
+    
+  }
+}
+@media screen and (min-width: 768px) {
+  .scroll-place {
     margin-left: 153px;
   }
 }
-@media screen and (max-width: 768px) {
-  .scroll-place {
-    margin-left: 0px;
-  }
-}
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .scroll-place{
-    margin-left: 0px;
+    margin-left: 585px;
   }
 }
 .scroll-place:hover,
