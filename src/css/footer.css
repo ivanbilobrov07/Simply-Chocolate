@@ -1,18 +1,10 @@
-/* .container {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 375px;
-} */
 .footer {
-  background-color:#1E1823;
+  background-color: #1e1823;
   padding-top: 32px;
-  padding-bottom: 32px
+  padding-bottom: 32px;
 }
 .icon {
-  fill:var(--white-color);
+  fill: var(--white-color);
 }
 .footer-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -24,21 +16,20 @@
   line-height: 1.16;
   justify-content: start;
   align-items: center;
-  color:var(--accent-color);
+  color: var(--accent-color);
   max-width: 252px;
-
 }
-.footer-title span{
+.footer-title span {
   color: var(--white-color);
 }
 .item {
   text-decoration: none;
 }
 .address {
-  color:var(--white-color);
+  color: var(--white-color);
 }
 .contacts {
-  gap:4px;
+  gap: 4px;
 }
 .nav {
   color: var(--white-color);
@@ -48,12 +39,12 @@
   line-height: 16px;
 }
 .footer-contact {
-  color:var(--white-color);
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.29;
-margin-bottom: 14px;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 14px;
 }
 .contacts-item {
   font-style: normal;
@@ -84,17 +75,10 @@ margin-bottom: 14px;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 375px) {
-  .footer {
-    background-color:#1E1823;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer {
-    background-color:#1E1823;
     padding-top: 50px;
     padding-bottom: 50px;
-
   }
   .second-div {
     display: flex;
@@ -107,22 +91,21 @@ margin-bottom: 14px;
     justify-content: start;
     width: auto;
     padding-bottom: 50px;
+  }
+  .third-div {
+    margin-top: 24px;
+  }
+  .nav {
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .footer-title {
+    font-size: 28px;
+    line-height: 1.2;
+    max-width: 300px;
+  }
+  .footer-top {
+    display: flex;
+  }
 }
-.third-div {
-  margin-top: 24px;
-}
-.nav {
-  flex-direction: row;
-  gap:24px;
-  align-items: flex-start;
-}
-.footer-title {
-  font-size: 28px;
-  line-height: 1.2;
-  max-width: 300px;
-}
-.footer-top {
-  display: flex;
-}
-}
-

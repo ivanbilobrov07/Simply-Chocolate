@@ -185,7 +185,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: #444;
+  stroke: var(--primary-text-color);
   cursor: pointer;
 }
 
