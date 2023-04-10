@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(../img/common/Subscribe/Subcribetel.jpg);
+    url(/img/common/Subscribe/Subcribetel.jpg);
 
   background-size: cover;
 }
@@ -20,7 +20,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/Subscribe/Subcribetel@2x.webp);
+      url(/img/common/Subscribe/Subcribetel@2x.webp);
   }
 }
 
@@ -113,7 +113,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/Subscribe/Subcribetab.jpg);
+      url(/img/common/Subscribe/Subcribetab.jpg);
   }
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -124,7 +124,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/common/Subscribe/Subcribetab@2x.webp);
+        url(/img/common/Subscribe/Subcribetab@2x.webp);
     }
   }
 }
@@ -136,7 +136,7 @@
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
       ),
-      url(../img/common/Subscribe/Subcribedesk.jpg);
+      url(/img/common/Subscribe/Subcribedesk.jpg);
   }
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -147,7 +147,7 @@
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)
         ),
-        url(../img/common/Subscribe/Subcribedesk@2x.webp);
+        url(/img/common/Subscribe/Subcribedesk@2x.webp);
     }
   }
 }
@@ -167,7 +167,7 @@
 }
 
 .sub-modal-btn {
-  background-image: url(../img/common/Subscribe/x-close.svg);
+  background-image: url(/img/common/Subscribe/x-close.svg);
   position: absolute;
   top: 15px;
   right: 14px;
@@ -186,13 +186,13 @@
 .sub-modal-photo {
   width: 100%;
   height: 156px;
-  background-image: url(../img/common/Subscribe/subscribe-coco.jpg);
+  background-image: url(/img/common/Subscribe/subscribe-coco.jpg);
 }
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .sub-modal-photo {
-    background-image: url(../img/common/Subscribe/subscribe-coco@2x.webp);
+    background-image: url(/img/common/Subscribe/subscribe-coco@2x.webp);
   }
 }
 
