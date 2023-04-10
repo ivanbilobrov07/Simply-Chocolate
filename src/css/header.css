@@ -182,11 +182,12 @@ li {
 .mobile-nav {
     display: flex;
     column-gap: 24px;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .mobile-social-box {
     display: flex;
+ 
     gap: 21px;
     position: absolute;
     left: 34px;
