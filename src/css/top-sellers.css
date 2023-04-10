@@ -36,10 +36,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 330px) and (max-width: 767px) {
-  .title-decor {
-    margin-bottom: 32px;
-  }
+@media screen and (max-width: 767px) {
   .sellers-list {
     row-gap: 32px;
     flex-direction: column;
