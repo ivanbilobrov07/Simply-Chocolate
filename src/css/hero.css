@@ -4,12 +4,11 @@
   padding-right: 40px;
   width: 100%;
 }
-@media screen and (max-width: 428px){
-  .main-container{
+@media screen and (max-width: 428px) {
+  .main-container {
     padding-right: 16px;
     padding-left: 20px;
-    width: 100% ;
-
+    width: 100%;
   }
 }
 .hero-section {
@@ -62,7 +61,7 @@
     border-radius: 30px;
   }
 }
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 428px) {
   .hero-section {
     background: linear-gradient(
         180deg,
@@ -79,7 +78,7 @@
     border-radius: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero-section {
     background: linear-gradient(
         180deg,
@@ -138,7 +137,7 @@
   .hero-text {
     font-weight: 500;
     font-size: 28px;
-    line-height: 18px;
+    line-height: 34px;
     letter-spacing: -0.03em;
     color: #ffffff;
     max-width: 484px;
@@ -153,9 +152,8 @@
     line-height: 24px;
   }
 }
-.scroll-down-text{
-  color:white;
-
+.scroll-down-text {
+  color: white;
 }
 /* ---------fonts---------- */
 
@@ -179,21 +177,21 @@
     height: 45px;
   }
 }
-  .buy-button {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 14px;
-    background: #fd9222;
-    border-radius: 100px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-    border: none;
-    width: auto;
-    width: 144px;
-    height: 45px;
-  }
+.buy-button {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fd9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  border: none;
+  width: auto;
+  width: 144px;
+  height: 45px;
+}
 
 .buy-button:hover,
 .buy-button:focus {
@@ -201,10 +199,9 @@
   border-radius: 100px;
   color: #fd9222;
 }
-@media screen and (max-width: 428px){
-  .how-its-made-button{
+@media screen and (max-width: 428px) {
+  .how-its-made-button {
     padding: 12px 28px;
-    
   }
 }
 .how-its-made-button {
@@ -223,15 +220,23 @@
   display: flex;
   gap: 14px;
   margin-left: auto;
-  margin-top: 39px;
   align-items: center;
+  margin-left: 585px;
 }
-
-
-
+@media screen and (max-width: 768px) {
+  .scroll-place {
+    margin-top: 0px;
+    margin-left: 153px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .scroll-place {
+    margin-left: 0px;
+  }
+}
 .scroll-place:hover,
 .scroll-place:focus {
-  color:
+  color: ;
 }
 .scroll-button:hover {
   background-color: #fd9222;
