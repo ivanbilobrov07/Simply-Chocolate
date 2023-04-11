@@ -28,6 +28,25 @@
   transition: color var(--duration) var(--time-function);
 }
 
+.mobile-link {
+  position: relative;
+}
+
+.mobile-link::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: var(--accent-color);
+}
+
+.mobile-link:hover::after {
+  opacity: 1;
+}
+
 .menu {
   height: 812px;
   max-height: 100%;
@@ -98,7 +117,7 @@
     font-size: 18px;
     line-height: 1.111;
     letter-spacing: -0.03em;
-    font-style: bold;
+    font-weight: bold;
     text-transform: uppercase;
     color: var(--primary-text-color);
   }
