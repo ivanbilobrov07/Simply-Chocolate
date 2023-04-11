@@ -143,6 +143,11 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
+.iti {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
 @media screen and (min-width: 768px) {
   .buy-now.modal {
     width: 610px;
@@ -176,7 +181,7 @@
     display: block;
     width: 96px;
     margin: 14px auto 0;
-    padding: 8px 29px;
+    padding: 8px 27px;
   }
   .buy-modal-name {
     display: flex;
