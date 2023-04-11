@@ -126,16 +126,20 @@
             class="buy-modal-form__input buy-modal-number-input"
             name="num"
             placeholder="Phone number"
+            id="phone1"
             type="tel"
           />
-          <span class="buy-modal-label-decor buy-modal-decor-left">
-            <svg class="buy-modal-label-decor__icon" width="24" height="18">
-              <use href="./img/icons.svg#flag"></use>
-            </svg>
-            <span class="buy-modal-label-decor__text">+380</span>
-          </span>
         </span>
       </label>
+      <script>
+        var input = document.querySelector('#phone1');
+        window.intlTelInput(input, {
+          separateDialCode: true,
+          initialCountry: 'ua',
+          excludeCountries: ['ru'],
+          customPlaceholder: true,
+        });
+      </script>
       <label class="buy-modal-form__box">
         <span class="buy-modal-form__label">Card number</span>
         <span class="buy-modal-label-box">

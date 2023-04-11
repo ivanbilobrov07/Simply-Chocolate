@@ -30,3 +30,7 @@
   visibility: visible;
   pointer-events: all;
 }
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
