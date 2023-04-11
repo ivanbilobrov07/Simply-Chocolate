@@ -31,7 +31,7 @@
 .contacts {
   gap: 4px;
 }
-.nav {
+.footer-nav {
   color: var(--white-color);
   font-style: normal;
   font-weight: 500;
@@ -73,7 +73,7 @@
 .third-div {
   margin-top: 32px;
 }
-.nav {
+.footer-nav {
   gap: 18px;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@
   .third-div {
     margin-top: 24px;
   }
-  .nav {
+  .footer-nav {
     flex-direction: row;
     gap: 24px;
     align-items: flex-start;
@@ -111,4 +111,25 @@
   .footer-top {
     display: flex;
   }
+}
+
+.contacts-item,
+.footer-nav-link {
+  transition: color var(--duration) var(--time-function);
+}
+
+.icon {
+  transition: fill var(--duration) var(--time-function);
+}
+
+.contacts-item:hover,
+.contacts-item:focus,
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.social-media-item:hover .icon,
+.social-media-item:focus .icon {
+  fill: var(--accent-color);
 }

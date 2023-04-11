@@ -1,10 +1,3 @@
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
 .nav-links li:hover .header-link,
 .nav-links li:focus .header-link {
   color: var(--accent-color);
@@ -27,12 +20,12 @@ li {
 
 .header-social-icon,
 .mobile-social-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--duration) var(--time-function);
 }
 
 .header-link,
 .mobile-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--duration) var(--time-function);
 }
 
 .menu {
@@ -180,7 +173,7 @@ li {
     background-color: #1e1823;
     transform: translateX(100%);
     padding: 136px 0 23px 50px;
-    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 800ms var(--time-function);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
@@ -201,7 +194,7 @@ li {
     background-color: #1e1823;
     transform: translateX(100%);
     padding: 136px 0 23px 50px;
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 500ms var(--time-function);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
@@ -209,12 +202,12 @@ li {
 
 .menu.is-open {
   transform: translateX(0);
-  transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 800ms var(--time-function);
 }
 
 .js-open-menu {
   border: none;
-  background-color: white;
+  background-color: transparent;
 }
 .js-close-menu {
   position: absolute;
@@ -224,18 +217,20 @@ li {
   border: none;
 }
 
-.mobile.menu {
-  position: relative;
-}
-
 .modal-icon {
   width: 13.3px;
   height: 13.3px;
-  fill: white;
+  fill: var(--white-color);
+  transition: fill var(--duration) var(--time-function);
 }
 
-.modal-icon:hover .modal-icon:focus {
-  fill: orange;
+.js-close-menu:hover .modal-icon,
+.js-close-menu:focus .modal-icon {
+  fill: var(--accent-color);
+}
+
+.mobile.menu {
+  position: relative;
 }
 
 .nav-row {
@@ -246,15 +241,9 @@ li {
   color: white;
   margin-bottom: 24px;
 }
-.nav-row:hover .nav-row:focus {
-  color: orange;
-}
 
 .mobile-social-icon {
   fill: white;
-}
-.mobile-social-icon:hover .mobile-social-icon:focus {
-  fill: orange;
 }
 
 .mobile-social-box {
