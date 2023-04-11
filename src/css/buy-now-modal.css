@@ -4,6 +4,7 @@
   overflow-y: scroll;
   height: 95%;
   max-height: 994px;
+  border-radius: 15px;
 }
 
 .buy-modal-inner {

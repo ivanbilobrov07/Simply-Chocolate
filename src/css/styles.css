@@ -5,6 +5,7 @@
   |============================
 */
 
+@import url('./fonts.css');
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./header.css');
@@ -20,4 +21,3 @@
 @import url('./modals.css');
 @import url('./buy-now-modal.css');
 @import url('./review-modal.css');
-@import url('./explore-modal.css');

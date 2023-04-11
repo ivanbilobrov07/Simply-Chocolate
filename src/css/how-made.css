@@ -1,4 +1,5 @@
 /* HOW ITS MADE */
+
 iframe {
   border-radius: 15px;
 }
@@ -62,13 +63,22 @@ iframe {
   object-fit: cover;
   border-radius: 15px;
 }
-.icon-play {
+.play-btn {
   position: absolute;
+  border: none;
+  background-color: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  transition: scale 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.play-btn:hover .icon-play,
+.play-btn:focus .icon-play {
+  transform: scale(120%);
+}
+.icon-play {
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
 }
 
 .container-video {
@@ -111,12 +121,8 @@ iframe {
     height: 500px;
   }
   .icon-play {
-    width: 35px;
-    height: 35px;
-  }
-  .icon-play:hover {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
   .how-its-made-title {
     margin-bottom: 32px;
@@ -181,14 +187,6 @@ iframe {
     width: 614px;
     height: 400px;
   }
-  .icon-play {
-    width: 44px;
-    height: 44px;
-  }
-  .icon-play:hover {
-    width: 50px;
-    height: 50px;
-  }
   .how-its-made-title {
     margin-bottom: 50px;
   }
@@ -216,6 +214,10 @@ iframe {
 }
 
 @media screen and (min-width: 1200px) {
+  .icon-play {
+    width: 44px;
+    height: 44px;
+  }
   .how-its-made-container {
     max-width: 1136px;
   }
@@ -244,7 +246,6 @@ iframe {
     width: 600px;
     height: 400px;
   }
-
   .how-its-made-text-container {
     padding: 32px;
     border-radius: 15px;

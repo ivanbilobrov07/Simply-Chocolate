@@ -186,4 +186,7 @@ img {
     width: 270px;
     height: 270px;
   }
+  .decor {
+    padding: 6px 12px;
+  }
 }

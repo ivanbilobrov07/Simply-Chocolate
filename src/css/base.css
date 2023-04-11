@@ -6,6 +6,9 @@
   --primary-background-color: #fafafa;
   --accent-color: #fd9222;
   --white-color: #ffffff;
+
+  --duration: 250ms;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -62,7 +65,9 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.list {
+  list-style: none;
+}
 @media screen and (min-width: 375px) {
   .container {
     width: 355px;
