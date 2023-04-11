@@ -14,8 +14,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/Simply-Chocolate/assets/index-339f597e.js"></script>
-    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-6053ef6a.css">
+    <script type="module" crossorigin src="/Simply-Chocolate/assets/index-3ffd528a.js"></script>
+    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-76ba808a.css">
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,7 @@
             <span class="logo-two">chocolate</span>
           </span>
           <svg class="header-logo-icon" width="24" height="24">
-            <use href="../img/icons.svg#logo"></use>
+            <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#logo"></use>
           </svg>
         </a>
         <ul class="nav-links">
@@ -36,16 +36,16 @@
             <a class="header-link" href="#">Home</a>
           </li>
           <li>
-            <a class="header-link" href="#hov">How it's made?</a>
+            <a class="header-link" href="#how">How it's made?</a>
           </li>
           <li>
             <a class="header-link" href="#products">Our products</a>
           </li>
           <li>
-            <a class="header-link" href="">Top sellers</a>
+            <a class="header-link" href="#sellers">Top sellers</a>
           </li>
           <li>
-            <a class="header-link" href="">Chocolate is loved</a>
+            <a class="header-link" href="#review">Chocolate is loved</a>
           </li>
         </ul>
 
@@ -85,24 +85,20 @@
           <nav class="mobile-nav">
             <ul class="nav box">
               <li class="nav-row">
-                <a class="mobile-link" href="./hero.html">Home</a>
+                <a class="mobile-link" href="#">Home</a>
               </li>
 
               <li class="nav-row">
-                <a class="mobile-link" href="./how-made.html">How it's made</a>
+                <a class="mobile-link" href="#how">How it's made</a>
               </li>
               <li class="nav-row">
-                <a class="mobile-link" href="./our-products.html"
-                  >Our products</a
-                >
+                <a class="mobile-link" href="#products">Our products</a>
               </li>
               <li class="nav-row">
-                <a class="mobile-link" href="./top-sellers.html">Top sellers</a>
+                <a class="mobile-link" href="#sellers">Top sellers</a>
               </li>
               <li class="nav-row">
-                <a class="mobile-link" href="./advantages.html"
-                  >Chocolate is loved</a
-                >
+                <a class="mobile-link" href="#review">Chocolate is loved</a>
               </li>
             </ul>
           </nav>
@@ -141,15 +137,19 @@
 
       <!-- ------buttons--------- -->
       <ul class="button-list">
-        <li><button class="buy-button" type="button">Buy now</button></li>
         <li>
-          <button class="how-its-made-button" type="button">
-            How it’s made
+          <button class="buy-button js-open-modal" data-modal="1" type="button">
+            Buy now
           </button>
+        </li>
+        <li>
+          <a href="#how" class="how-its-made-button" type="button">
+            How it’s made
+          </a>
         </li>
 
         <li class="scroll">
-          <a class="scroll-place">
+          <a id="scroll" class="scroll-place">
             <p class="scroll-down-text">scroll down</p>
             <button class="scroll-button" type="button">
               <svg class="svg-scroll" width="13px" height="7px">
@@ -407,9 +407,11 @@
             style="width: auto"
           />
         </picture>
-        <svg id="icon_play" class="icon-play">
-          <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#icon-play"></use>
-        </svg>
+        <button id="icon_play" class="play-btn">
+          <svg class="icon-play">
+            <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#icon-play"></use>
+          </svg>
+        </button>
         <iframe
           id="video"
           src="https://www.youtube.com/embed/DISjdfkSjc8"
@@ -575,7 +577,7 @@
   </div>
 </section>
 
-      <section class="section">
+      <section id="sellers" class="section">
   <div class="container">
     <h2 class="title"><span class="title-decor">Top </span>Sellers</h2>
     <div>
@@ -712,7 +714,7 @@
   </div>
 </section>
 
-      <section class="review-section section">
+      <section id="review" class="review-section section">
   <div class="container">
     <h2 class="title"><span class="title-decor">chocolate</span> is loved</h2>
     <div class="swiper-rew review-swiper-padding">
@@ -874,14 +876,14 @@
 
         <ul class="social-media list">
           <li class="social-media-list">
-            <a href="" class="social-media-item">
+            <a href="#" class="social-media-item">
               <svg class="icon" width="22" height="22">
                 <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-media-list">
-            <a href="" class="social-media-item">
+            <a href="#" class="social-media-item">
               <svg class="icon" width="22" height="22">
                 <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#twitter"></use>
               </svg>
@@ -891,12 +893,20 @@
       </address>
     </div>
     <div class="third-div">
-      <ul class="nav list">
-        <li class="nav-list">Home</li>
-        <li class="nav-list">How it’s made?</li>
-        <li class="nav-list">Our products</li>
-        <li class="nav-list">Top sellers</li>
-        <li class="nav-list">Chocolate is loved</li>
+      <ul class="footer-nav list">
+        <li class="nav-list"><a href="#" class="footer-nav-link">Home</a></li>
+        <li class="nav-list">
+          <a href="#how" class="footer-nav-link">How it’s made?</a>
+        </li>
+        <li class="nav-list">
+          <a href="#products" class="footer-nav-link">Our products</a>
+        </li>
+        <li class="nav-list">
+          <a href="#sellers" class="footer-nav-link">Top sellers</a>
+        </li>
+        <li class="nav-list">
+          <a href="#review" class="footer-nav-link">Chocolate is loved</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -1052,9 +1062,11 @@
 </div>
 
 <div class="modal modal-review" data-modal="2">
-  <svg class="modal__cross js-modal-close">
-    <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#close"></use>
-  </svg>
+  <button class="js-modal-close modal-review-close">
+    <svg class="modal__cross">
+      <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#close"></use>
+    </svg>
+  </button>
   <h2 class="modal-review-title-font">
     LEAVE A REVIEW ABOUT<span class="title-decor"> OUR CHOCOLATE</span>
   </h2>
@@ -1126,7 +1138,7 @@
         placeholder="Enter your email"
         class="form-input"
       />
-      <button type="button" class="coco-btn">Submit</button>
+      <button type="submit" class="coco-btn">Submit</button>
     </div>
   </div>
 </div>
@@ -1134,8 +1146,12 @@
 <div class="overlay js-overlay-modal"></div>
 
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../js/mobilemenu.js"></script>
+    <script src="./js/mobilemenu.js"></script>
     
   </body>
 </html>
