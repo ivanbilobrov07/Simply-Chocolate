@@ -33,8 +33,7 @@
     position: absolute;
     bottom: 0;
     display: block;
-    width: 100%;
-    max-width: 24px;
+    width: 24px;
     height: 1px;
     opacity: 0;
     color: var(--accent-color);
