@@ -28,22 +28,24 @@
   transition: color var(--duration) var(--time-function);
 }
 
+.mobile-link {
+  position: relative;
+}
+
 .mobile-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 24px;
-    height: 1px;
-    opacity: 0;
-    color: var(--accent-color);
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: var(--accent-color);
 }
 
-.mobile-link::after:hover
-.mobile-link::after:focus {
-opacity: 1;
+.mobile-link:hover::after {
+  opacity: 1;
 }
-
 
 .menu {
   height: 812px;
