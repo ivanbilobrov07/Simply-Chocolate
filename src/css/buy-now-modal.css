@@ -21,6 +21,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 
   stroke: #000;
 }
@@ -58,8 +59,8 @@
   display: block;
 }
 
-.buy-modal-form__box + .buy-modal-form__box {
-  margin-top: 18px;
+.buy-modal-form__box {
+  margin-bottom: 18px;
 }
 
 .buy-modal-form__label {
@@ -80,7 +81,7 @@
   width: 100%;
   padding: 14px 18px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .buy-modal-number-input {
@@ -123,8 +124,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   padding: 14px 18px;
   resize: none;
-  border-radius: 15px;
-  margin-bottom: 18px;
+  border-radius: 8px;
 }
 
 .buy-modal-form__btn {
@@ -145,7 +145,7 @@
 
 .iti {
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -196,6 +196,7 @@
   }
   .buy-modal-form__input {
     padding: 22px 24px;
+    border-radius: 13px;
   }
   .buy-modal-number-input {
     padding-left: 177px;
@@ -214,6 +215,7 @@
     padding-right: 32px;
   }
   .buy-modal-form__textarea {
+    border-radius: 13px;
     height: 140px;
     padding: 22px 24px;
   }
