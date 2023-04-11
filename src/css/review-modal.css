@@ -193,7 +193,6 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 437px;
     height: 66px;
-    padding-left: 24px;
     padding-right: 24px;
     margin-bottom: 19px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -239,6 +238,7 @@
 }
 
 .iti--separate-dial-code .iti__selected-flag {
+  padding-left: 16px;
   background-color: transparent;
   position: relative;
   border-top-left-radius: 13px;
@@ -248,8 +248,31 @@
 .iti--separate-dial-code .iti__selected-flag::after {
   content: '';
   position: absolute;
-  left: 80px;
+  left: 78px;
   width: 32px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   transform: rotate(90deg);
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type='text'],
+.iti--allow-dropdown input[type='tel'],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type='text'],
+.iti--separate-dial-code input[type='tel'] {
+  padding-left: 103px;
+}
+
+@media screen and (min-width: 768px) {
+  .iti--separate-dial-code .iti__selected-flag::after {
+    left: 90px;
+  }
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type='text'],
+  .iti--allow-dropdown input[type='tel'],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type='text'],
+  .iti--separate-dial-code input[type='tel'] {
+    padding-left: 118px;
+  }
 }
