@@ -13,15 +13,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    
-
     <link
       rel="stylesheet"
       href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
     />
+    
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script type="module" crossorigin src="/Simply-Chocolate/assets/index-122884aa.js"></script>
-    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-5dcff56d.css">
+    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-f26bd1cb.css">
   </head>
   <body>
     <header class="header">
@@ -1028,16 +1027,20 @@
             class="buy-modal-form__input buy-modal-number-input"
             name="num"
             placeholder="Phone number"
+            id="phone1"
             type="tel"
           />
-          <span class="buy-modal-label-decor buy-modal-decor-left">
-            <svg class="buy-modal-label-decor__icon" width="24" height="18">
-              <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#flag"></use>
-            </svg>
-            <span class="buy-modal-label-decor__text">+380</span>
-          </span>
         </span>
       </label>
+      <script>
+        var input = document.querySelector('#phone1');
+        window.intlTelInput(input, {
+          separateDialCode: true,
+          initialCountry: 'ua',
+          excludeCountries: ['ru'],
+          customPlaceholder: true,
+        });
+      </script>
       <label class="buy-modal-form__box">
         <span class="buy-modal-form__label">Card number</span>
         <span class="buy-modal-label-box">
@@ -1115,7 +1118,6 @@
           title="xxx-xxx-xx-xx"
           placeholder="Phone number"
         />
-        <div id="flag-container"></div>
       </span>
     </label>
 
