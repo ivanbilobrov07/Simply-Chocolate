@@ -1,17 +1,111 @@
-.sellers {
+.sellers-list {
+  display: flex;
 }
-.container {
+.sellers-img {
+  border-radius: 15px;
 }
-.sellers-title {
+.sellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.sellers-button {
+  color: var(--white-color);
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #fd9222;
-  text-align: center;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: transparent;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.title-sellers {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #111111;
+.sellers-button:hover,
+.sellers-button:focus {
+  color: var(--accent-color);
+  background-color: #fcf1e0;
+}
+/* Mobile  */
+@media screen and (max-width: 1199px) {
+  .sellers-list .sellers-item:last-child {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sellers-list {
+    row-gap: 32px;
+    flex-direction: column;
+  }
+  .sellers-text {
+    max-width: 306px;
+    margin-top: 20px;
+  }
+  .sellers-but {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sellers-box {
+    justify-content: center;
+  }
+  .sellers-button {
+    padding: 12px 28px;
+    font-size: 14px;
+    line-height: 1.21;
+    min-width: 120px;
+    min-height: 41px;
+    margin-top: 20px;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .sellers-list {
+    column-gap: 16px;
+  }
+  .sellers-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .sellers-text {
+    max-width: 306px;
+  }
+  .sellers-button {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    min-width: 162px;
+    min-height: 50px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sellers-text {
+    margin-top: 32px;
+  }
+  .sellers-button {
+    margin-top: 32px;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .sellers-words {
+    display: none;
+  }
+  .sellers-list {
+    column-gap: 16px;
+    margin-bottom: 32px;
+  }
+  .sellers-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .sellers-text {
+    max-width: 407px;
+  }
 }
