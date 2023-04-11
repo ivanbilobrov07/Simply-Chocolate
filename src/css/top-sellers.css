@@ -17,10 +17,8 @@
   border-radius: 100px;
   border: transparent;
   cursor: pointer;
-  transition-property: background-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--duration) var(--time-function),
+    background-color var(--duration) var(--time-function);
 }
 .sellers-button:hover,
 .sellers-button:focus {

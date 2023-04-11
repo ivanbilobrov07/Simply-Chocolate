@@ -64,20 +64,27 @@
   font-size: 14px;
   line-height: 1.2;
   border: none;
+  transition: color var(--duration) var(--time-function),
+    background var(--duration) var(--time-function);
 }
 .how-its-made-button {
+  display: block;
   min-width: 180px;
   padding: 12px 28px;
   border: 1px solid #ffffff;
 
   border-radius: 100px;
+  text-align: center;
   background: rgba(0, 0, 0, 0);
   color: inherit;
+  transition: color var(--duration) var(--time-function),
+    background var(--duration) var(--time-function);
 }
 .scroll-place {
   display: flex;
   gap: 14px;
   align-items: center;
+  transition: color var(--duration) var(--time-function);
 }
 .scroll-button {
   border-radius: 50%;
@@ -91,12 +98,12 @@
 }
 .svg-scroll {
   fill: var(--accent-color);
+  transition: fill var(--duration) var(--time-function);
 }
 
 .buy-button:hover,
 .buy-button:focus {
   background: #fcf1e0;
-  border-radius: 100px;
   color: var(--accent-color);
 }
 
