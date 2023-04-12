@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Simply-Chocolate/favicon.svg" />
+    <meta name="description" content="Chocolate shop" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
     <link
@@ -20,14 +21,14 @@
     
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <script type="module" crossorigin src="/Simply-Chocolate/assets/index-122884aa.js"></script>
-    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-608b45b1.css">
+    <link rel="stylesheet" href="/Simply-Chocolate/assets/index-7a17d661.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <div class="header-container">
       <nav class="header-nav">
-        <a class="logo" href="./header.html">
+        <a class="logo" aria-label="logo" href="./header.html">
           <span class="logo-text">
             <span class="logo-one">simply</span>
             <span class="logo-two">chocolate</span>
@@ -57,14 +58,14 @@
         <div class="header-social-box">
           <ul class="header-social-block">
             <li class="header-social-row">
-              <a class="header-social-link" href="#">
+              <a class="header-social-link" aria-label="instagram" href="#">
                 <svg class="header-social-icon" width="20" height="20">
                   <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="header-social-row">
-              <a class="header-social-link" href="#">
+              <a class="header-social-link" aria-label="twitter" href="#">
                 <svg class="header-social-icon" width="20" height="20">
                   <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#twitter"></use>
                 </svg>
@@ -73,7 +74,7 @@
           </ul>
         </div>
         <div class="burger">
-          <button class="js-open-menu" type="button">
+          <button class="js-open-menu" aria-label="menu button" type="button">
             <svg class="burger-icon" width="32" height="22">
               <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#burger"></use>
             </svg>
@@ -81,7 +82,7 @@
         </div>
       </nav>
       <div class="menu js-menu-container">
-        <button class="js-close-menu" type="button">
+        <button class="js-close-menu" aria-label="close button" type="button">
           <svg class="modal-icon" width="13.33px" height="13.33px">
             <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#icon-close"></use>
           </svg>
@@ -110,14 +111,14 @@
           <div class="mobile-social-box">
             <ul class="mobile-social-block">
               <li class="mobile-social-row">
-                <a class="mobile-social-link" href="#">
+                <a class="mobile-social-link" aria-label="instagram" href="#">
                   <svg class="mobile-social-icon" width="20" height="20">
                     <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="mobile-social-row">
-                <a class="mobile-social-link" href="#">
+                <a class="mobile-social-link" aria-label="twitter" href="#">
                   <svg class="mobile-social-icon" width="20" height="20">
                     <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#twitter"></use>
                   </svg>
@@ -153,14 +154,14 @@
       </li>
 
       <li class="scroll">
-        <a id="scroll" class="scroll-place">
+        <button id="scroll" class="scroll-place">
           <p class="scroll-down-text">scroll down</p>
-          <button class="scroll-button" type="button">
+          <span class="scroll-button" type="button">
             <svg class="svg-scroll" width="13px" height="7px">
               <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#icon-scroll"></use>
             </svg>
-          </button>
-        </a>
+          </span>
+        </button>
       </li>
     </ul>
   </div>
@@ -396,21 +397,25 @@
       <div class="container-video">
         <picture class="how-its-made-image">
           <source
+            media="(max-width: 767px)"
+            srcset="/Simply-Chocolate/assets/video-mobile-d773a381.webp 1x, /Simply-Chocolate/assets/video-mobile@2x-30d7e01e.webp 2x"
+          />
+          <source
             media="(min-width:768px) and (max-width: 1199px)"
-            srcset="/Simply-Chocolate/assets/pastry-chef-preparing-chocolate-cake-614-94c929be.jpg "
+            srcset="/Simply-Chocolate/assets/video-tablet-db263823.webp 1x, /Simply-Chocolate/assets/video-tablet@2x-8195a8ae.webp 2x"
           />
           <source
             media="(min-width:1200px)"
-            srcset="/Simply-Chocolate/assets/pastry-chef-preparing-chocolate-cake-600-996c4cb6.jpg "
+            srcset="/Simply-Chocolate/assets/video-desktop-4a0ecb06.webp 1x, /Simply-Chocolate/assets/video-desktop@2x-9c8b3809.webp 2x"
           />
           <img
             id="image"
-            src="/Simply-Chocolate/assets/pastry-chef-preparing-chocolate-cake-335-e5d89c52.jpg"
+            src="/Simply-Chocolate/assets/video-mobile-665b4f7f.jpg"
             alt="Pastry chef preparing chocolate cake"
             style="width: auto"
           />
         </picture>
-        <button id="icon_play" class="play-btn">
+        <button id="icon_play" aria-label="button play video" class="play-btn">
           <svg class="icon-play">
             <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#icon-play"></use>
           </svg>
@@ -879,14 +884,14 @@
 
         <ul class="social-media list">
           <li class="social-media-list">
-            <a href="#" class="social-media-item">
+            <a href="#" aria-label="instagram" class="social-media-item">
               <svg class="icon" width="22" height="22">
                 <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social-media-list">
-            <a href="#" class="social-media-item">
+            <a href="#" aria-label="twitter" class="social-media-item">
               <svg class="icon" width="22" height="22">
                 <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#twitter"></use>
               </svg>
@@ -916,7 +921,7 @@
 </footer>
 
     <div class="modal buy-now" data-modal="1">
-  <svg class="buy-now-close js-modal-close">
+  <svg aria-label="close button" class="buy-now-close js-modal-close">
     <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#close"></use>
   </svg>
   <div class="buy-modal-inner">
@@ -1069,7 +1074,7 @@
 </div>
 
 <div class="modal modal-review" data-modal="2">
-  <button class="js-modal-close modal-review-close">
+  <button class="js-modal-close modal-review-close" aria-label="close button">
     <svg class="modal__cross">
       <use href="/Simply-Chocolate/assets/icons-69d4a3ff.svg#close"></use>
     </svg>
@@ -1141,7 +1146,11 @@
 </div>
 
 <div class="sub-modal modal" data-modal="3">
-  <button type="button" class="js-modal-close sub-modal-btn"></button>
+  <button
+    type="button"
+    aria-label="close button"
+    class="js-modal-close sub-modal-btn"
+  ></button>
   <div class="sub-modal-photo"></div>
   <h2 class="sub-modal-h2">
     EXPLORE OUR <br />
