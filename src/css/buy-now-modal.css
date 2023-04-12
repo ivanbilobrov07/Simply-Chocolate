@@ -34,16 +34,28 @@
   margin-bottom: 32px;
 }
 
-.buy-modal__item {
+.buy-modal__item-label {
+  display: block;
   padding: 8px 16px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
+  transition: border var(--duration) var(--time-function),
+    background-color var(--duration) var(--time-function);
 }
 
 .buy-modal-item__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.buy-modal-checkbox:checked + .buy-modal__item-label {
+  border: 1px solid var(--accent-color);
+  background-color: rgba(150, 89, 33, 0.1);
+}
+
+.buy-modal-checkbox:checked + .buy-modal__item-label .buy-modal__amount {
+  background-color: rgba(150, 89, 33, 0.1);
 }
 
 .buy-modal__amount {
@@ -53,6 +65,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   font-weight: 600;
+  transition: background-color var(--duration) var(--time-function);
 }
 
 .buy-modal-form__box {
@@ -93,6 +106,7 @@
 }
 
 .buy-modal-label-box {
+  display: block;
   position: relative;
 }
 
@@ -172,7 +186,10 @@
   }
   .buy-modal__item {
     flex-basis: calc((100% - 32px) / 3);
+  }
+  .buy-modal__item-label {
     padding: 24px 20px 18px;
+    cursor: pointer;
   }
   .buy-modal-item__inner {
     display: block;

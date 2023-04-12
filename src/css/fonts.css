@@ -33,3 +33,9 @@
   font-weight: 700;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff) format('woff');
+  font-weight: 700;
+}

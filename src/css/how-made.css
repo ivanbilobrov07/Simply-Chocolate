@@ -48,6 +48,7 @@ iframe {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  width: 100%;
 }
 
 #video {
@@ -88,12 +89,6 @@ iframe {
 
 /* ADAPTIVE */
 @media screen and (max-width: 375px), screen and (min-width: 375px) {
-  .how-its-made-container {
-    max-width: 335px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-  }
   .how-its-made-section {
     padding-top: 72px;
   }
@@ -106,8 +101,6 @@ iframe {
 
   .container-video {
     margin-bottom: 20px;
-    max-width: 335px;
-    height: 500px;
     /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../images/pastry-chef-preparing-chocolate-cake-375@1x.jpg'); */
   }
@@ -158,17 +151,15 @@ iframe {
   iframe {
     width: 335px;
   }
-  #image {
-    width: 335px;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .how-its-made-container {
-    max-width: 614px;
-  }
   .how-its-made-section {
     padding-top: 100px;
+  }
+  .how-its-made-content {
+    max-width: 614px;
+    margin: 0 auto;
   }
   .container-video {
     margin: 0;
@@ -218,13 +209,12 @@ iframe {
     width: 44px;
     height: 44px;
   }
-  .how-its-made-container {
-    max-width: 1136px;
-  }
   .how-its-made-section {
     padding-top: 128px;
   }
   .how-its-made-content {
+    max-width: none;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
