@@ -243,6 +243,7 @@
   transition: fill var(--duration) var(--time-function);
 }
 
+.js-close-menu:active .modal-icon,
 .js-close-menu:hover .modal-icon,
 .js-close-menu:focus .modal-icon {
   fill: var(--accent-color);
