@@ -99,6 +99,7 @@
   width: 28px;
   height: 28px;
   background: #ffffff;
+  transition: background var(--duration) var(--time-function);
 }
 .scroll {
   cursor: pointer;
