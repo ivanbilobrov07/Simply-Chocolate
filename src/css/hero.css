@@ -82,11 +82,18 @@
 }
 .scroll-place {
   display: flex;
+  border: none;
+  background-color: transparent;
   gap: 14px;
   align-items: center;
   transition: color var(--duration) var(--time-function);
+  color: inherit;
+  font-family: inherit;
 }
 .scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   border: none;
   width: 28px;

@@ -5,25 +5,34 @@
       <div class="container-video">
         <picture class="how-its-made-image">
           <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/common/how-its-made/video-mobile.webp    1x,
+              ./img/common/how-its-made/video-mobile@2x.webp 2x
+            "
+          />
+          <source
             media="(min-width:768px) and (max-width: 1199px)"
             srcset="
-              ./img/common/how-its-made/pastry-chef-preparing-chocolate-cake-614.jpg
+              ./img/common/how-its-made/video-tablet.webp    1x,
+              ./img/common/how-its-made/video-tablet@2x.webp 2x
             "
           />
           <source
             media="(min-width:1200px)"
             srcset="
-              ./img/common/how-its-made/pastry-chef-preparing-chocolate-cake-600.jpg
+              ./img/common/how-its-made/video-desktop.webp    1x,
+              ./img/common/how-its-made/video-desktop@2x.webp 2x
             "
           />
           <img
             id="image"
-            src="./img/common/how-its-made/pastry-chef-preparing-chocolate-cake-335.jpg"
+            src="./img/common/how-its-made/video-mobile.jpg"
             alt="Pastry chef preparing chocolate cake"
             style="width: auto"
           />
         </picture>
-        <button id="icon_play" class="play-btn">
+        <button id="icon_play" aria-label="button play video" class="play-btn">
           <svg class="icon-play">
             <use href="./img/icons.svg#icon-play"></use>
           </svg>
