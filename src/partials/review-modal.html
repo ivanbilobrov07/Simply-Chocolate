@@ -4,7 +4,7 @@
       <use href="./img/icons.svg#close"></use>
     </svg>
   </button>
-  <h2 class="modal-review-title-font">
+  <h2 class="modal-review-title title">
     LEAVE A REVIEW ABOUT<span class="title-decor"> OUR CHOCOLATE</span>
   </h2>
   <form class="modal-form modal-content">
@@ -56,10 +56,11 @@
         initialCountry: 'ua',
         excludeCountries: ['ru'],
         customPlaceholder: true,
+        onlyCountries: ['us', 'ad', 'at', 'by', 'be', 'ch', 'ua'],
       });
     </script>
 
-    <label class="modal-form-field">
+    <label class="modal-form-field textarea-field">
       <textarea
         name="user-message"
         class="modal-form-message"

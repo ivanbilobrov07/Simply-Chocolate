@@ -1,139 +1,150 @@
 <div class="modal buy-now" data-modal="1">
-  <svg aria-label="close button" class="buy-now-close js-modal-close">
-    <use href="./img/icons.svg#close"></use>
-  </svg>
+  <button class="buy-modal-close">
+    <svg aria-label="close button" class="buy-modal-close__icon js-modal-close">
+      <use href="./img/icons.svg#close"></use>
+    </svg>
+  </button>
   <div class="buy-modal-inner">
     <h2 class="title buy-modal__title">
       <span class="title-decor">bUY</span> nOW
     </h2>
-    <ul class="buy-modal__list">
-      <li class="buy-modal__item">
-        <input
-          id="check1"
-          class="buy-modal-checkbox visually-hidden"
-          type="checkbox"
-          name="product"
-          value="chocolate-1"
-        />
-        <label for="check1" class="buy-modal__item-label">
-          <span class="buy-modal-item__inner">
-            <picture>
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-mobile-1.webp    1x,
-                  ./img/buy-modal/chocolate-mobile-1@2x.webp 2x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-tablet-1.webp    1x,
-                  ./img/buy-modal/chocolate-tablet-1@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-                type="image/webp"
-              />
-              <img
-                class="buy-modal__img"
-                src="./img/buy-modal/chocolate-1.png"
-                alt="Chocolate"
-              />
-            </picture>
-            <span class="buy-modal__amount">100 g</span>
-          </span>
-        </label>
-      </li>
-      <li class="buy-modal__item">
-        <input
-          id="check2"
-          class="buy-modal-checkbox visually-hidden"
-          type="checkbox"
-          name="product"
-          value="chocolate-2"
-        />
-        <label for="check2" class="buy-modal__item-label">
-          <span class="buy-modal-item__inner">
-            <picture>
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-mobile-2.webp    1x,
-                  ./img/buy-modal/chocolate-mobile-2@2x.webp 2x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-tablet-2.webp    1x,
-                  ./img/buy-modal/chocolate-tablet-2@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-                type="image/webp"
-              />
-              <img
-                class="buy-modal__img"
-                src="./img/buy-modal/chocolate-2.png"
-                alt="Chocolate"
-              />
-            </picture>
-            <span class="buy-modal__amount">200 g</span>
-          </span>
-        </label>
-      </li>
-      <li class="buy-modal__item">
-        <input
-          id="check3"
-          class="buy-modal-checkbox visually-hidden"
-          type="checkbox"
-          name="product"
-          value="chocolate-3"
-        />
-        <label for="check3" class="buy-modal__item-label">
-          <span class="buy-modal-item__inner">
-            <picture>
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-mobile-3.webp    1x,
-                  ./img/buy-modal/chocolate-mobile-3@2x.webp 2x
-                "
-                media="(max-width: 767px)"
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./img/buy-modal/chocolate-tablet-3.webp    1x,
-                  ./img/buy-modal/chocolate-tablet-3@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-                type="image/webp"
-              />
-              <img
-                class="buy-modal__img"
-                src="./img/buy-modal/chocolate-3.png"
-                alt="Chocolate"
-              />
-            </picture>
-            <span class="buy-modal__amount">300 g</span>
-          </span>
-        </label>
-      </li>
-    </ul>
-    <form class="buy-modal__form">
+    <form id="buy-modal__form" class="buy-modal__form">
+      <ul class="buy-modal__list">
+        <li class="buy-modal__item">
+          <input
+            id="check1"
+            class="buy-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-1"
+          />
+          <label for="check1" class="buy-modal__item-label">
+            <span class="buy-modal-item__inner">
+              <picture>
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-mobile-1.webp    1x,
+                    ./img/buy-modal/chocolate-mobile-1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-tablet-1.webp    1x,
+                    ./img/buy-modal/chocolate-tablet-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  class="buy-modal__img"
+                  src="./img/buy-modal/chocolate-1.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="buy-modal__amount">100 g</span>
+            </span>
+          </label>
+        </li>
+        <li class="buy-modal__item">
+          <input
+            id="check2"
+            class="buy-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-2"
+          />
+          <label for="check2" class="buy-modal__item-label">
+            <span class="buy-modal-item__inner">
+              <picture>
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-mobile-2.webp    1x,
+                    ./img/buy-modal/chocolate-mobile-2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-tablet-2.webp    1x,
+                    ./img/buy-modal/chocolate-tablet-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  class="buy-modal__img"
+                  src="./img/buy-modal/chocolate-2.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="buy-modal__amount">200 g</span>
+            </span>
+          </label>
+        </li>
+        <li class="buy-modal__item">
+          <input
+            id="check3"
+            class="buy-modal-checkbox visually-hidden"
+            type="checkbox"
+            name="product"
+            value="chocolate-3"
+          />
+          <label for="check3" class="buy-modal__item-label">
+            <span class="buy-modal-item__inner">
+              <picture>
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-mobile-3.webp    1x,
+                    ./img/buy-modal/chocolate-mobile-3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/buy-modal/chocolate-tablet-3.webp    1x,
+                    ./img/buy-modal/chocolate-tablet-3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  class="buy-modal__img"
+                  src="./img/buy-modal/chocolate-3.png"
+                  alt="Chocolate"
+                />
+              </picture>
+              <span class="buy-modal__amount">300 g</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+
       <span class="buy-modal-form__label">Personal information</span>
       <span class="buy-modal-form__box buy-modal-name">
-        <input
-          class="buy-modal-form__input"
-          name="name"
-          placeholder="Name"
-          type="text"
-        />
-        <input
-          class="buy-modal-form__input"
-          name="surname"
-          placeholder="Surname"
-          type="text"
-        />
+        <label class="buy-modal-form__box">
+          <input
+            class="buy-modal-form__input"
+            name="name"
+            placeholder="Name"
+            type="text"
+            required
+            minlength="2"
+          />
+        </label>
+        <label class="buy-modal-form__box">
+          <input
+            class="buy-modal-form__input"
+            name="surname"
+            placeholder="Surname"
+            type="text"
+            required
+            minlength="2"
+          />
+        </label>
       </span>
       <label class="buy-modal-form__box">
         <span class="buy-modal-form__label">Email</span>
@@ -142,6 +153,7 @@
           name="email"
           placeholder="Enter your email"
           type="email"
+          required
         />
       </label>
       <label class="buy-modal-form__box">
@@ -153,16 +165,21 @@
             placeholder="Phone number"
             id="phone1"
             type="tel"
+            required
+            minlength="5"
           />
         </span>
       </label>
       <script>
         var input = document.querySelector('#phone1');
         window.intlTelInput(input, {
+          utilsScript:
+            'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
           separateDialCode: true,
           initialCountry: 'ua',
           excludeCountries: ['ru'],
           customPlaceholder: true,
+          onlyCountries: ['us', 'ad', 'at', 'by', 'be', 'ch', 'ua'],
         });
       </script>
       <label class="buy-modal-form__box">
@@ -173,6 +190,8 @@
             name="card"
             placeholder="Enter card"
             type="text"
+            required
+            minlength="16"
           />
           <span class="buy-modal-label-decor buy-modal-decor-right">
             <svg class="buy-modal-label-decor__icon" width="22" height="13">
@@ -189,7 +208,13 @@
           placeholder="Enter text"
         ></textarea>
       </label>
-      <button type="submit" class="buy-modal-form__btn">Submit</button>
+      <button
+        id="buy-modal-form__btn"
+        type="submit"
+        class="buy-modal-form__btn primary-button"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>

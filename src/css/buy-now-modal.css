@@ -1,3 +1,12 @@
+.iti.iti--container {
+  width: auto;
+}
+
+.iti__selected-flag:focus {
+  outline: none;
+  border: none;
+}
+
 .buy-now.modal {
   width: 311px;
   background-color: #fafafa;
@@ -15,15 +24,50 @@
   margin-bottom: 32px;
 }
 
-.buy-now-close {
-  width: 12px;
-  height: 12px;
+.buy-modal-close {
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+
+  transition: background-color var(--duration) var(--time-function);
+}
+
+.buy-modal-close:hover,
+.buy-modal-close:focus {
+  background-color: var(--accent-color);
+}
+
+.buy-modal-close__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
 
   stroke: #000;
+
+  transition: stroke var(--duration) var(--time-function);
+}
+
+.buy-modal-close:hover .buy-modal-close__icon,
+.buy-modal-close:focus .buy-modal-close__icon {
+  stroke: var(--white-color);
+}
+
+.buy-modal__item {
+  height: 85px;
+  border-radius: 15px;
+}
+
+.buy-modal__item:focus-within {
+  border: 2px solid var(--accent-color);
 }
 
 .buy-modal__item + .buy-modal__item {
@@ -39,8 +83,7 @@
   padding: 8px 16px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  transition: border var(--duration) var(--time-function),
-    background-color var(--duration) var(--time-function);
+  transition: border var(--duration) var(--time-function);
 }
 
 .buy-modal-item__inner {
@@ -51,21 +94,24 @@
 
 .buy-modal-checkbox:checked + .buy-modal__item-label {
   border: 1px solid var(--accent-color);
-  background-color: rgba(150, 89, 33, 0.1);
 }
 
 .buy-modal-checkbox:checked + .buy-modal__item-label .buy-modal__amount {
-  background-color: rgba(150, 89, 33, 0.1);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: 1px solid var(--accent-color);
 }
 
 .buy-modal__amount {
   display: block;
   padding: 6px 16px;
-  background: #fafafa;
+  background-color: var(--primary-background-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   font-weight: 600;
-  transition: background-color var(--duration) var(--time-function);
+  transition: background-color var(--duration) var(--time-function),
+    color var(--duration) var(--time-function),
+    border var(--duration) var(--time-function);
 }
 
 .buy-modal-form__box {
@@ -92,8 +138,9 @@
 .buy-modal-form__input {
   display: block;
   width: 100%;
+  height: 45px;
   padding: 14px 18px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
   border-radius: 8px;
 }
 
@@ -135,10 +182,16 @@
 .buy-modal-form__textarea {
   width: 100%;
   height: 90px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
   padding: 14px 18px;
   resize: none;
   border-radius: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.buy-modal-form__textarea::-webkit-scrollbar {
+  display: none;
 }
 
 .buy-modal-form__btn {
@@ -170,11 +223,15 @@
   .buy-modal-inner {
     padding: 48px;
   }
-  .buy-now-close {
-    width: 14px;
-    height: 14px;
+  .buy-modal-close {
     top: 24px;
     right: 24px;
+    width: 35px;
+    height: 35px;
+  }
+  .buy-modal-close__icon {
+    width: 14px;
+    height: 14px;
   }
   .buy-modal__item + .buy-modal__item {
     margin-top: 0px;
@@ -186,10 +243,14 @@
   }
   .buy-modal__item {
     flex-basis: calc((100% - 32px) / 3);
+    height: 197px;
   }
   .buy-modal__item-label {
     padding: 24px 20px 18px;
     cursor: pointer;
+  }
+  .buy-modal__item:last-child .buy-modal__item-label {
+    padding: 20px 20px 18px;
   }
   .buy-modal-item__inner {
     display: block;
@@ -212,6 +273,7 @@
     margin-top: 0;
   }
   .buy-modal-form__input {
+    height: 66px;
     padding: 22px 24px;
     border-radius: 13px;
   }

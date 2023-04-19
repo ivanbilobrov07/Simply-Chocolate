@@ -1,29 +1,38 @@
-<section id="hero" class="hero-section">
+<section id="hero" class="hero">
   <div class="main-container">
-    <h2 class="hero-text">
+    <h2 class="hero__title">
       Treat yourself or a loved one to our finest ingredients for a moment of
       pure delight!
     </h2>
-    <ul class="button-list">
-      <li>
-        <button class="buy-button js-open-modal" data-modal="1" type="button">
+    <ul class="hero__list">
+      <li class="hero__item">
+        <button
+          class="buy-button js-open-modal primary-button"
+          data-modal="1"
+          type="button"
+        >
           Buy now
         </button>
       </li>
-      <li>
+      <li class="hero__item">
         <a href="#how" class="how-its-made-button"> How it’s made </a>
       </li>
 
-      <li class="scroll">
-        <button id="scroll" class="scroll-place">
-          <span class="scroll-down-text">scroll down</span>
-          <span class="scroll-button">
-            <svg class="svg-scroll" width="13px" height="7px">
+      <li class="hero__item scroll">
+        <a class="scroll__box" href="#footer">
+          <span class="scroll__text">scroll down</span>
+          <span class="scroll__button">
+            <svg class="svg-scroll" width="12" height="12">
               <use href="./img/icons.svg#icon-scroll"></use>
             </svg>
           </span>
-        </button>
+        </a>
       </li>
     </ul>
+    <button class="top-btn" id="toTop" aria-label="Go to top" title="Go to top">
+      <svg class="top-btn__icon" width="30" height="14">
+        <use href="./img/icons.svg#icon-scroll"></use>
+      </svg>
+    </button>
   </div>
 </section>

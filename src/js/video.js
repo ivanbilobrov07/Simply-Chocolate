@@ -1,19 +1,11 @@
-var image = document.getElementById('image');
-var video = document.getElementById('video');
-var iconPlay = document.getElementById('icon_play');
+jQuery(document).ready(function ($) {
+  (function initPlayVideo() {
+    var $videoCover = $('.how-made-video-cover');
+    var $videoPlayerIframe = $('.how-made-video-player iframe');
 
-image.addEventListener('click', function () {
-  video.src += '?autoplay=1';
-
-  video.style.display = 'block';
-  image.style.display = 'none';
-  iconPlay.style.display = 'none';
-});
-
-iconPlay.addEventListener('click', function () {
-  video.src += '?autoplay=1';
-
-  video.style.display = 'block';
-  image.style.display = 'none';
-  iconPlay.style.display = 'none';
+    $videoCover.on('click', function () {
+      $videoCover.fadeOut();
+      $videoPlayerIframe[0].src += '&autoplay=1';
+    });
+  })();
 });

@@ -4,6 +4,7 @@
 
   --primary-text-color: #111111;
   --primary-background-color: #fafafa;
+  --secondary-background-color: #1e1823;
   --accent-color: #fd9222;
   --white-color: #ffffff;
 
@@ -50,6 +51,14 @@ body {
   font-weight: 600;
   color: var(--white-color);
   background-color: var(--accent-color);
+  transition: color var(--duration) var(--time-function),
+    background var(--duration) var(--time-function);
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background: #fcf1e0;
+  color: var(--accent-color);
 }
 
 .visually-hidden {
@@ -65,9 +74,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.list {
-  list-style: none;
-}
+
 @media screen and (min-width: 375px) {
   .container {
     width: 355px;

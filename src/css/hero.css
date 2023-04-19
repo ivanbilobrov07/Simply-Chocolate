@@ -1,10 +1,12 @@
-.hero-section {
+.hero {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 72px;
   padding-top: 84px;
+
   color: var(--white-color);
 }
+
 .main-container {
   padding-left: 20px;
   padding-right: 16px;
@@ -16,13 +18,114 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(/img/hero/chocolate-covered-cocoa-powder-3.jpg);
+    url(/img/hero/mobile-hero-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 620px;
   border-radius: 30px;
 }
+
+.hero__title {
+  min-height: 428px;
+  margin-bottom: 32px;
+  padding-top: 325px;
+
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hero__list {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buy-button {
+  min-width: 180px;
+  padding: 12px 28px;
+
+  font-size: 14px;
+}
+
+.how-its-made-button {
+  display: block;
+  min-width: 180px;
+  padding: 12px 28px;
+  border: 1px solid var(--white-color);
+
+  border-radius: 100px;
+  color: var(--white-color);
+  text-align: center;
+  transition: color var(--duration) var(--time-function),
+    background var(--duration) var(--time-function);
+}
+
+.scroll {
+  margin-left: auto;
+
+  cursor: pointer;
+}
+
+.scroll__box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: none;
+
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+
+  transition: color var(--duration) var(--time-function);
+}
+
+.scroll__button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  border-radius: 50%;
+
+  background: var(--white-color);
+  transition: background var(--duration) var(--time-function);
+}
+
+.svg-scroll {
+  fill: var(--accent-color);
+  transition: fill var(--duration) var(--time-function);
+}
+
+.how-its-made-button:hover,
+.how-its-made-button:focus {
+  color: var(--accent-color);
+  background-color: #e2e2e2;
+}
+
+.scroll:hover .scroll__box,
+.scroll:focus .scroll__box {
+  color: var(--accent-color);
+}
+
+.scroll:hover .scroll__button,
+.scroll:focus .scroll__button {
+  background: var(--accent-color);
+}
+
+.scroll:hover .svg-scroll,
+.scroll:focus .svg-scroll {
+  fill: var(--white-color);
+}
+
+.top-btn {
+  display: none;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -32,113 +135,10 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/img/hero/chocolate-covered-cocoa-powder-3@2x.jpg);
+      url(/img/hero/mobile-hero-bg@2x.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-.hero-text {
-  margin-bottom: 32px;
-  padding-top: 340px;
-
-  letter-spacing: -0.03em;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.button-list {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.buy-button {
-  min-width: 180px;
-  padding: 12px 28px;
-
-  background: var(--accent-color);
-  color: inherit;
-  border-radius: 100px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  border: none;
-  transition: color var(--duration) var(--time-function),
-    background var(--duration) var(--time-function);
-}
-.how-its-made-button {
-  display: block;
-  min-width: 180px;
-  padding: 12px 28px;
-  border: 1px solid #ffffff;
-
-  border-radius: 100px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0);
-  color: inherit;
-  transition: color var(--duration) var(--time-function),
-    background var(--duration) var(--time-function);
-}
-.scroll-place {
-  display: flex;
-  border: none;
-  background-color: transparent;
-  gap: 14px;
-  align-items: center;
-  transition: color var(--duration) var(--time-function);
-  color: inherit;
-  font-family: inherit;
-}
-.scroll-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: none;
-  width: 28px;
-  height: 28px;
-  background: #ffffff;
-  transition: background var(--duration) var(--time-function);
-}
-.scroll {
-  cursor: pointer;
-}
-.svg-scroll {
-  fill: var(--accent-color);
-  transition: fill var(--duration) var(--time-function);
-}
-
-.buy-button:hover,
-.buy-button:focus {
-  background: #fcf1e0;
-  color: var(--accent-color);
-}
-
-.how-its-made-button:hover,
-.how-its-made-button:focus {
-  color: var(--accent-color);
-  background-color: #e2e2e2;
-}
-
-.scroll:hover .scroll-place,
-.scroll:focus .scroll-place {
-  color: var(--accent-color);
-}
-
-.scroll:hover .scroll-button,
-.scroll:focus .scroll-button {
-  background: var(--accent-color);
-}
-
-.scroll:hover .svg-scroll,
-.scroll:focus .svg-scroll {
-  fill: var(--white-color);
-}
-
-@media screen and (min-width: 344px) {
-  .hero-text {
-    padding-top: 360px;
   }
 }
 
@@ -146,8 +146,9 @@
   .main-container {
     max-width: 335px;
   }
-  .hero-text {
-    padding-top: 395px;
+  .hero__title {
+    padding-top: 390px;
+    min-height: auto;
   }
   .buy-button {
     min-width: 120px;
@@ -155,13 +156,13 @@
   .how-its-made-button {
     min-width: 160px;
   }
-  .button-list {
+  .hero__list {
     gap: 32px 14px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero-section {
+  .hero {
     padding-right: 32px;
     padding-left: 32px;
     padding-bottom: 50px;
@@ -175,14 +176,14 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/img/hero/chocolate-covered-cocoa-powder-2.jpg);
+      url(/img/hero/tablet-hero-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 704px;
     height: 890px;
   }
-  .hero-text {
+  .hero__title {
     max-width: 484px;
     padding-top: 670px;
 
@@ -194,12 +195,13 @@
   .how-its-made-button {
     min-width: 183px;
   }
-  .scroll {
-    margin-left: auto;
-  }
-  .scroll-button {
+  .scroll__button {
     width: 38px;
     height: 38px;
+  }
+  .svg-scroll {
+    width: 16px;
+    height: 16px;
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -210,7 +212,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(/img/hero/chocolate-covered-cocoa-powder-2@2x.jpg);
+        url(/img/hero/tablet-hero-bg@2x.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -218,7 +220,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero-section {
+  .hero {
     padding-right: 32px;
     padding-left: 32px;
     padding-bottom: 72px;
@@ -229,16 +231,55 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(/img/hero/chocolate-covered-cocoa-powder-1.jpg);
+      url(/img/hero/desktop-hero-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1136px;
     height: 600px;
   }
-  .hero-text {
+  .hero__title {
     padding-top: 380px;
   }
+  .top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--accent-color);
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+    transform: scale(1);
+    transition: transform var(--duration) var(--time-function),
+      background-color var(--duration) var(--time-function);
+  }
+  .top-btn:hover,
+  .top-btn:focus {
+    transform: scale(1.15);
+    background-color: var(--accent-color);
+  }
+  .top-btn:hover .top-btn__icon,
+  .top-btn:focus .top-btn__icon {
+    fill: var(--white-color);
+  }
+  .top-btn.show {
+    display: flex;
+  }
+  .top-btn__icon {
+    transform: rotate(180deg);
+
+    fill: var(--accent-color);
+    transition: fill var(--duration) var(--time-function);
+  }
+
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -248,7 +289,7 @@
           rgba(17, 17, 17, 0) 0%,
           rgba(17, 17, 17, 0.4) 100%
         ),
-        url(/img/hero/chocolate-covered-cocoa-powder-1@2x.jpg);
+        url(/img/hero/desktop-hero-bg@2x.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
