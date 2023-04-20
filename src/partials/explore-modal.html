@@ -1,24 +1,35 @@
-<div class="sub-modal modal" data-modal="3">
+<div class="subscribe-modal modal" data-modal="3">
   <button
     type="button"
     aria-label="close button"
-    class="js-modal-close sub-modal-btn"
-  ></button>
-  <div class="sub-modal-photo"></div>
-  <h2 class="sub-modal-h2">
-    EXPLORE OUR <br />
-    <span class="sub-modal-span">NEW CHOCOLATE</span> FIRST!
-  </h2>
-  <div class="form-field">
-    <div class="pos-form-icon">
-      <input
-        type="email"
-        name="Email"
-        id="Email"
-        placeholder="Enter your email"
-        class="form-input"
-      />
-      <button type="submit" class="coco-btn">Submit</button>
+    class="js-modal-close subscribe-modal-close"
+  >
+    <svg
+      aria-label="close button"
+      class="subscribe-modal-close__icon js-modal-close"
+    >
+      <use href="./img/icons.svg#close"></use>
+    </svg>
+  </button>
+  <div class="subscribe-modal-photo"></div>
+  <div class="subscribe-modal-content">
+    <h2 class="subscribe-modal-title title">
+      EXPLORE OUR <br />
+      <span class="title-decor">NEW CHOCOLATE</span> FIRST!
+    </h2>
+    <div class="subscribe-form-field">
+      <lavel class="subscribe-label">
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Enter your email"
+          class="subscribe-form-input"
+        />
+      </lavel>
+      <button type="submit" class="primary-button subscribe-modal-btn">
+        Submit
+      </button>
     </div>
   </div>
 </div>

@@ -1,4 +1,3 @@
-document.cookie = 'name=value; SameSite=Lax';
 import './js/modal.js';
 import './js/mobilemenu.js';
 import './js/swiper.js';
